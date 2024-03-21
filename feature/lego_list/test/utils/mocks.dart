@@ -1,4 +1,5 @@
 import 'package:lego_list/src/configurator/configurator.dart';
+import 'package:lego_list/src/domain/repository/lego_repository.dart';
 import 'package:lego_list/src/navigation/navigation.dart';
 import 'package:mocktail/mocktail.dart';
 
@@ -13,3 +14,7 @@ LegoListConfigurator createLegoListConfigurator(bool isGrid) {
 class MockLegoListNavigation extends Mock implements LegoListNavigation {}
 
 LegoListNavigation createLegoListNavigation() => MockLegoListNavigation();
+
+class MockLegoRepository extends Mock implements LegoRepository {}
+
+LegoRepository createLegoRepository() => MockLegoRepository();
