@@ -277,7 +277,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: c8b4496f382fa725e5f3b93acabcd8cff15ad5d8
+      resolved-ref: df3a12e894e1f7ea102bd39a1015cd646ca728d3
       url: "https://github.com/venkata-reddy-dev/get_it"
     source: git
     version: "7.6.7+1"

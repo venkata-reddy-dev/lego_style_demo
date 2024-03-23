@@ -9,7 +9,7 @@ Future<void> theFlowIsRunningWithConfiguration(
     WidgetTester tester, String config,
     {Function(GetIt getIt)? extraGetItConfigCallback}) async {
   final getIt = GetIt.I;
-  getIt.ignoreReassignmentError = true;
+  getIt.skipDoubleRegistration = true;
   await getIt.reset();
   extraGetItConfigCallback?.call(getIt);
   getIt.registerSingleton(createLegoListConfigurator(config == 'grid'));
